@@ -7,12 +7,17 @@ $currentPage = basename($_SERVER['PHP_SELF']);
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Details</title>
+    <title>RCM Metal Works</title>
     <link rel="stylesheet" href="css/style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Press+Start+2P&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">		
+		<link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Press+Start+2P&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
   <body>
+	<div class="page-wrapper">
 		<header>
 			<nav class="top-left-navigation">
 				<a href=".">
@@ -22,26 +27,40 @@ $currentPage = basename($_SERVER['PHP_SELF']);
 			<div class="top-right-navigation">
 				<nav>
 					<ul>
-					<li><a href="services.php" class="<?= $currentPage == 'services.php' ? 'active' : '' ?>">Services</a></li>
-					<li><a href="projects.php" class="<?= $currentPage == 'projects.php' ? 'active' : '' ?>">Projects</a></li>
-					<li><a href="about.php" class="<?= $currentPage == 'about.php' ? 'active' : '' ?>">About</a></li>
-					<li><a href="contact.php" class="<?= $currentPage == 'contact.php' ? 'active' : '' ?>">Contact</a></li>
+					<li><a href="services.php" class="<?= $currentPage == 'services.php' ? 'active' : '' ?>"><strong>SERVICES</strong></a></li>
+					<li><a href="projects.php" class="<?= $currentPage == 'projects.php' ? 'active' : '' ?>"><strong>PROJECTS</strong></a></li>
+					<li><a href="about.php" class="<?= $currentPage == 'about.php' ? 'active' : '' ?>"><strong>ABOUT</strong></a></li>
+					<li><a href="contact.php" class="<?= $currentPage == 'contact.php' ? 'active' : '' ?>"><strong>CONTACT</strong></a></li>
 					</ul>
 				</nav>
 			</div>
 		</header>
+		</div>
 		
-		<footer>
-			<p><strong><a href="contact.php">Contact</a></strong></p>
-			<br>
-			<p>4131 S 420 W, Murray, UT 84123</p>
-			<p>(801) 505-3369</p>
-			<p>erinmcreavy@gmail.com</p>
-			<br>
-			<p><strong>Licensed and Insured</strong></p>
-			<div class="social-icons">
-				<a href="https://www.instagram.com/rcm_metal_works/" class="social-icons"><img src="img/instagram-logo.png" alt="instagram-link"></a>
-				<a href="https://www.facebook.com/RCMMetalWorks/" class="social-icons"><img src="img/facebook-logo.png" alt="facebook-link"></a>
+		<footer class="site-footer">
+			<div class="footer-content">
+				<div class="footer-section contact-info">
+					<a href="contact.php" class="contact-link"><strong>Contact</strong></a>
+					<p>4131 S 420 W, Murray, UT 84123</p>
+					<p>(801) 505-3369</p>
+					<p><a href="mailto:erinmcreavy@gmail.com">erinmcreavy@gmail.com</a></p>
+				</div>
+
+				<div class="footer-section legal-social">
+					<p><strong>Licensed and Insured</strong></p>
+					<div class="social-icons">
+						<a href="https://www.instagram.com/rcm_metal_works/" target="_blank">
+							<img src="img/instagram-logo.png" alt="Instagram">
+						</a>
+						<a href="https://www.facebook.com/RCMMetalWorks/" target="_blank">
+							<img src="img/facebook-logo.png" alt="Facebook">
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-bottom">
+				<p>RCM Metal Works, Est. 2021</p>
 			</div>
 		</footer>
   </body>
